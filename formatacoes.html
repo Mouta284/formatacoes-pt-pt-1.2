@@ -1,3 +1,5 @@
+<!--COMENTÁRIO IMPORTANTE: COLOQUEM ESTE CÓDIGO NUM EDITOR E PASSEM-NO PARA UM NAVEGADOR PARA USAREM SENÃO NÃO VOS MOSTRA EM ASPECTO SITE!! PODEM VER POR AQUI PARA NÃO SEI SE É MUITO BOM EM CÓDIGO PARA QUEM TA A COMEÇAR!-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +25,7 @@
         }
     </style>
     <h1>Formatações!</h1>
+    <h2> AVISO: AS <EM>TAGS</EM> SEMÂNTICAS SÃO TAGS QUE NÃO SE CONCENTRAM NA FORMA, MAS SIM NO SENTIDO QUE TRANSMITEM! AS <EM>TAGS</EM> NÃO SEMÂNTICAS CONCENTRAM-SE NA FORMA E NÃO NO QUE O NAVEGADOR ENTENDE (O SENTIDO)!</h2>
     <h2>Itálico/Ênfase</h2>
     <p>&lt;i&gt; (não semântico) <i>Boas!</i> <br>
         &lt;em&gt; (semântico) <em>Boas!</em></p>
@@ -42,7 +45,32 @@
         <!-- Comentário:
         Pudemos dar um texto como excluído, ou seja dar ler mas não considerado! Pudemos dar um texto como incluído, ou seja dar uma ênfase e dar a ler que foi add depois!-->
        <h2>Texto sobrescrito/subscrito</h2>
-    <p>&lt;sup&gt; (sobrescrito) Boas<sup>2</sup> 
-       &lt;sub&gt; (subscrito) Boas<sub>2</sub></p>
+    <p>&lt;sup&gt; (sobrescrito) Boas<sup>2</sup> <br> 
+       &lt;sub&gt; (subscrito) Boas<sub>2</sub></p>  
+       <h1>Outras Formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>Esta frase que escrevi com o Código-fonte de algo tem a <em>tag</em> &lt;code&gt;, esta serve para colocar a fonte do Código-fonte que estás a mostrar a alguém em formato código mesmo!</p>
+    <p>O comando <code>document.getElementById</code> é escrito em JS.</p>
+    <pre>
+    <code>
+num = int(int("Digita um número"))
+if num % 2 == 0:
+    print(f'O número {num} é PAR)
+    </code>
+</pre> 
+    <h2>Citações simples</h2>
+    <p> Usa-se a <em>tag</em> &lt;q&gt; para colocar "" automáticamente e dar a entender que é uma citação! <br> Como diria alguém: <q>o computador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Usa-se a <em>tag</em> &lt;blockquote cite = ""&gt; para dar a entender ao navegador que é uma citação! Aliás, até pudemos colocar dentro do parâmetro "cite" um valor que é o local de onde retiramos a citação para preservar os direitos do autor!</p>
+    <p>Segundo Jeff Noble, no livro seu livro de HTML:</p>
+    <blockquote cite="https://books.google.pt/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Usa-se a <em>tag</em> &lt;abbr title=""&gt; para colocar o sentido da sigla! Se passarmos o cursor por cima da palavra vemos o significado!</p>
+    <p>Estou a estudar <abbr title="HyperText Markup Language">HTML</abbr>e <abbr title="Cascading Style Sheets">CSS</abbr>. E estou a gostar!</p>
+    <h2>Texto invertido</h2>
+    <p>Esta <em>tag</em> não tem sentido, mas não se perde nada em saber! É basicamente usual para inverter texto, para quem escreve livros e queira fazer códigos até que não é mau! &lt;bdo dir="rtl"(ou ltr, depende da direção da inversão que querem!) <br> <em>ltr(Left to Right) e rtl(Right to Left)</em></p>
+    <p><bdo dir="rtl">Estou a aprender HTML!</bdo></p>
 </body>
 </html>
